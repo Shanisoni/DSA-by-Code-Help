@@ -14,23 +14,23 @@ int main(){
         }
         // Stars
         for(int c = 0; c<i+1; c++){
-            cout<<"* ";
+            cout<<"*  ṇ";
         }
         cout<<endl;
     }
 
   
 
-    for(int i = 0; i<n; i++){
-        // space
-        for(int row=0; row < i; row++){
-            cout<<" ";
-        }
-        for(int row=0; row<n-i; row++){
-            cout<<"* ";
-        }
-        cout<<endl;
-    } 
+    // for(int i = 0; i<n; i++){
+    //     // space
+    //     for(int row=0; row < i; row++){
+    //         cout<<" ";
+    //     }
+    //     for(int row=0; row<n-i; row++){
+    //         cout<<"* ";
+    //     }
+    //     cout<<endl;
+    // } 
 
      
 }
