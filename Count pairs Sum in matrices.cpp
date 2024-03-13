@@ -1,80 +1,37 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
+#include <sstream>
+
 using namespace std;
-class Solution{
-public:	
-	
-int countPairs(vector<vector<int>> &mat1, vector<vector<int>> &mat2, int n, int x)
-	{
-	    // Your code goes here
-	    int ans=0;
-	    int i=0,j=0,a=n-1,b=n-1;
-	    bool flag=true;
-	    while(flag){
-	        if(mat1[i][j]+mat2[a][b]==x){
-	            ans++;
-	            j++;b--;
-	            if(j==n){
-	                i++;j=0;
-	            }
-	            if(b==-1){
-	                a--;b=n-1;
-	            }
-	        }
-	        else if(mat1[i][j]+mat2[a][b]>x){
-	            b--;
-	            if(b==-1){
-	                a--; b=n-1;
-	            }
-	        }
-	        else {
-	            j++;
-	            if(j==n){
-	                i++;j=0;
-	            }
-	        }
-	        if(a==-1||i==n)flag=false;
-	    }
-	    return ans;
-	}
-};
 
-int main() 
-{
+int main() {
+    std::string input;
+    std::cout << "Enter a number: ";
+    std::getline(std::cin, input); // Get the entire line to include potential floating points
 
-   	ios_base::sync_with_stdio(0);
-    cin.tie(NULL);
-    cout.tie(NULL);
-   
-   	int t;
-    cin >> t;
-    while (t--)
-    {
-        int n, x;
-        cin >> n >> x;
+    std::istringstream stream(input);
+    double number;
+    char check;
 
-        vector<vector<int>> mat1(n, vector<int>(n, -1));
-        vector<vector<int>> mat2(n, vector<int>(n, -1));
-
-        for(int i = 0; i < n; i++)
-        {
-        	for(int j = 0; j < n; j++)
-        	{
-        		cin >> mat1[i][j];
-        	}
+    // Attempt to read a number
+    if (stream >> number) {
+        // Check if there's anything left in the stream after reading the number
+        if (stream >> check) {
+            // If we can read a non-numeric character after the number, it's an invalid input
+            std::cout << "-1 (Invalid input, not a pure number)" << std::endl;
+        } else {
+            // At this point, we've read a number successfully and nothing else was in the input
+            if (number == static_cast<int>(number)) {
+                // The number is an integer if it's equal to its integer cast
+                std::cout << "Input is an integer." << std::endl;
+            } else {
+                // Otherwise, it's a float
+                std::cout << "Input is a float." << std::endl;
+            }
         }
-
-        for(int i = 0; i < n; i++)
-        {
-        	for(int j = 0; j < n; j++)
-        	{
-        		cin >> mat2[i][j];
-        	}
-        }
-
-        Solution ob;
-
-        cout << ob.countPairs(mat1, mat2, n, x) << "\n";
-
+    } else {
+        // Couldn't read the input as a number at all
+        std::cout << "-1 (Invalid input, not recognizable as a number)" << std::endl;
     }
 
     return 0;
