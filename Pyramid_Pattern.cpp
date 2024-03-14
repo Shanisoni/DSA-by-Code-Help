@@ -9,12 +9,16 @@ int main(){
    
     for(int i=0; i<N; i++){
          int k = 0;
-        
+        // Spaces
         for(int j=0; j< ((2*N)-1); j++){
             if(j<N-i-1){
                 cout<< " ";
             }
-             else if( k < 2 * i + 1 ){
+            // For Star *
+            // We take a variable k to print the star 
+            // Since we need to print the stars so we 
+            // need refresh this k thats why we had placed it after the  first loop 
+             else if( k < 2 * i + 1 ){  
              if(k== 0 || k==2*i || i == N-1)
                cout<<"*";
               else
