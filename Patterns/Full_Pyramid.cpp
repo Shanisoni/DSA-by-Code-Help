@@ -31,7 +31,9 @@ int main(){
             cout<<" ";
         }
         for(int j =0; j<i+1; j++){
-            cout<<"* ";
+            char ch =  j+1 + 'A' -1 ;
+
+            cout<<ch ;
         }
         
         cout<<endl;
