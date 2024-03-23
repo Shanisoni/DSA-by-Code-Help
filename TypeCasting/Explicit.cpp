@@ -2,17 +2,25 @@
 
 using namespace std;
 
+int main(){
+    int num1 = 170;
 
- void addition(){
-        for(int i = 0 ; i<9; i++){
-            cout<<"Hey This is me Shani";
-        }
-    }
+    int num2 = 190.00;
 
-int main() {
-    
-    addition();
+    // float result = (float)num1 + num2;
 
-    return 0;
-   
+    // char result = (char)num1 + (char)num2;
+
+    // cout<< result; 
+
+    // float result = (float)num1 / (float)num2 ;
+
+    // cout<< result ;
+
+    float result = num1 / (float)num2 ;
+
+    cout<< result ;
+
+
+
 }
