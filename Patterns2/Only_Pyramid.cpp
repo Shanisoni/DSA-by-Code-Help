@@ -6,7 +6,7 @@ int main(){
     cin>>n;
     for(int i =0; i<n; i++){
         // spaces
-        for(int c = 0; c<n-1-i; c++){
+        for(int j = 0; j<n-1-i; j++){
             cout<<" ";
         }
         // Stars
