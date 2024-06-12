@@ -12,5 +12,6 @@ int main() {
     int*arr = new int[n];
     
     
+    
 }
 
