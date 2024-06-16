@@ -6,6 +6,9 @@ using namespace std;
 
 
 // or do this by this method 
+
+
+
 int main() {
     int n; 
     cin >> n;
