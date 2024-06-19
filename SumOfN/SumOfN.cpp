@@ -22,7 +22,7 @@ int main(){
 
 // #include<iostream>
 
-// using namespace std;
+// using namespace std;\\\
 
 
 // void sum (int n){
