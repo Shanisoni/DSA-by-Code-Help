@@ -77,3 +77,152 @@
 //         return ans;
 //     }
 // };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class Solution {
+// public:
+
+//        int findPivotIndex(vector<int>& nums) {
+
+//         int N = nums.size() ;
+
+//         int s = 0 ;
+
+//         int e = N - 1 ;
+
+//         int mid = s + ( e - s ) / 2 ;
+
+//       while( s <= e) {
+
+//         if( s == e ) return s ;
+
+//         if ( mid + 1 <= N  && nums[mid] >nums[ mid + 1 ]) return mid ;
+
+//          else if( mid - 1 >= 0 && nums[mid] < nums[mid - 1]) return mid -1 ;
+
+//         else if ( nums[s] > nums[mid])
+//             e = mid - 1 ; 
+      
+//         else {
+//             s = mid + 1 ; 
+//         }
+
+//         mid = s + ( e  - s ) / 2 ;
+
+//       }
+//       return -1 ;
+
+        
+//     }
+
+
+
+    
+
+
+
+
+
+
+
+
+
+//     int binarySearch( vector<int>& nums ,  int s , int PivotIndex ,  int target ) {
+
+    
+
+//        int  mid = s + ( PivotIndex - s ) / 2;
+
+
+
+//         while( s <= PivotIndex ) {
+
+//         if (nums[mid]  ==  target ){
+//             return mid ;
+//         }
+
+//         else if ( nums[mid] > target ){
+
+//             PivotIndex = mid - 1 ; 
+            
+
+//         }
+//         else {
+//             s = mid + 1;
+//         }
+
+//         mid = s + ( PivotIndex - s ) / 2 ;
+
+//         }
+
+//         return -1 ;
+
+//     }
+
+
+
+
+
+//     int search(vector<int>& nums, int target) {
+
+
+//         int PivotIndex = findPivotIndex(nums);
+
+//         int s = 0;
+
+//         int n = nums.size();
+
+//         int ans = - 1 ; 
+
+
+//         if ( target >= nums[s] && target <= nums[PivotIndex] )
+//         {
+//             ans = binarySearch( nums , s , PivotIndex , target) ;
+
+//         }
+
+//         else
+//         {
+//           ans =   binarySearch( nums , PivotIndex + 1 , n - 1 ,  target );
+//         }
+
+//         return ans ;
+
+        
+//     }
+// };
