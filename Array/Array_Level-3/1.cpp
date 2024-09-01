@@ -11,6 +11,8 @@ void shanii(int shani[2][3], int row , int col) {
 
         for( int j = 0 ; j < col ;  j++ )  { 
 
+            
+
 
 
 
