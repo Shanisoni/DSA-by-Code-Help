@@ -61,11 +61,14 @@ int main () {
 
    
    soni(shani , row , col ) ;
+   
 
 
    cout << endl; 
 
+
    shanii(shani , row , col ) ;
+
 
 
     
