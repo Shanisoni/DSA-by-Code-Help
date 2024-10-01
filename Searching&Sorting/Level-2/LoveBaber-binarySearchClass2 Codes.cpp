@@ -25,6 +25,8 @@ int findPivotIndex(vector<int>& arr) {
             if(arr[mid] > arr[mid+1])
                 return mid;
             else if(arr[mid] < arr[mid-1])
+
+            
                 return mid-1;
             else if(arr[s] > arr[mid] ) 
                 e = mid - 1;
