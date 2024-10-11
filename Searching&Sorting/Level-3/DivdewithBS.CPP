@@ -20,6 +20,7 @@ int getQuotient( int divisor , int dividend) {
         }
 
         if( mid * divisor < dividend){
+            ans = mid;
             s = mid + 1;
         }
 
