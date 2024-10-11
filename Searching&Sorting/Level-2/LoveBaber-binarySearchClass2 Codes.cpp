@@ -23,7 +23,7 @@ int findPivotIndex(vector<int>& arr) {
             }
 
             if(arr[mid] > arr[mid+1])
-                return mid;
+                return mid; 
             else if(arr[mid] < arr[mid-1])
 
             
