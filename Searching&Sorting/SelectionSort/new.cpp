@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 #include<vector>
 using namespace std ;
 
@@ -8,7 +9,7 @@ using namespace std ;
         int minIndex = i;
         for( int j = i + 1;  j < n ; j++) {
             if ( v[j] < v[minIndex]){
-
+ 
                 minIndex = j ;
 
             }
@@ -24,7 +25,9 @@ int main() {
 
     int n =  v.size();
 
-    SelectionSort(v , n) ;
+    sort(v.begin() , v.end() );
+
+    // SelectionSort(v , n) ;
 
     cout << " Sorted Array is : " << endl;
 
