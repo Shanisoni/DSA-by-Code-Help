@@ -8,7 +8,10 @@ int getQuotient( int divisor , int dividend) {
 
     int e = 29;
 
+
     int mid = s + (e - s )/2 ;
+
+    
 
     int ans = -1 ;
 
