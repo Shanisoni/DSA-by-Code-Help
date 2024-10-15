@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './Style.css'
 
 export default class Component1 extends Component {
 
@@ -33,6 +34,8 @@ export default class Component1 extends Component {
       <div>
         <button style={object} onClick={this.changeState}> Click Me</button>
         <h1 style={object}>the deep green </h1>
+
+        <h21 className = 'myfont' >My Name is Shani Soni</h21>
         
       </div>
     )
