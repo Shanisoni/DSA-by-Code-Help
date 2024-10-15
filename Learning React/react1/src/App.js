@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <>
-      <Component1/>
+      <Component1 check = {false} />
       </>
      
     </div>

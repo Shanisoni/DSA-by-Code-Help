@@ -19,6 +19,8 @@ export default class Component1 extends Component {
     
   render() {
 
+    let X = this.props.check ? 'myfont1' : 'myfont2';
+
     let object = {
         color : 'red',
         backgroundColor : 'green',
@@ -35,7 +37,7 @@ export default class Component1 extends Component {
         <button style={object} onClick={this.changeState}> Click Me</button>
         <h1 style={object}>the deep green </h1>
 
-        <h21 className = 'myfont' >My Name is Shani Soni</h21>
+        <h21 className = {`${X} myfont3`} >My Name is Shani Soni</h21>
         
       </div>
     )

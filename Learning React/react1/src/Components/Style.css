@@ -1,5 +1,17 @@
-.myfont{
+.myfont1{
 
     color: aqua;
+
+}
+
+.myfont2{
+
+    color: rgb(255, 94, 0);
+
+}
+
+.myfont3{
+
+    background-color: rgb(255, 0, 221);
 
 }
