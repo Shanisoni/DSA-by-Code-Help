@@ -5,7 +5,16 @@ function USWithArray() {
     let [name , setName] =  useState(shani);
 
     const ChangState = () => {
-            setName([10 , 20 , 30 , 40 , 50]);
+            setName( previousState  => {
+                return[
+                    ...previousState,
+                    Math.floor(Math.random() *20),
+                    90
+
+                ]
+                    
+                
+            })
 
           
     }
