@@ -49,38 +49,85 @@
 
 // export default UScomponent
 
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
-function UScomponent() {
-  const shani = {
-    name: "shani",
-    class: "B.Tech",
-    Roll: 101,
-    City: "Delhi",
-  };
+// function UScomponent() {
+//   const shani = {
+//     name: "shani",
+//     class: "B.Tech",
+//     Roll: 101,
+//     City: "Delhi",
+//   };
 
-  const [persion , setName] = useState(shani);
+//   const [persion , setName] = useState(shani);
 
-  const ChangState = () => {
-    setName({
-      name : "soni",
-      class : "M.Tech",
-      Roll : 202 ,
-      City : "Mumbai"
+//   const ChangState = () => {
+//     setName({
+//       name : "soni",
+//       class : "M.Tech",
+//       Roll : 202 ,
+//       City : "Mumbai"
 
-    })
-  }
+//     })
+//   }
 
-  return (
-    <>
-    <h1> {persion.City}</h1>
-    <h1> {persion.Roll}</h1>
-    <h1> {persion.class}</h1>
-      <div>UScomponent</div>
-      {/* <h1> {Persion} </h1> */}
-      <button onClick={ChangState}>Click Me</button>
-    </>
-  );
-}
+//   return (
+//     <>
+//     <h1> {persion.City}</h1>
+//     <h1> {persion.Roll}</h1>
+//     <h1> {persion.class}</h1>
+//       <div>UScomponent</div>
+//       {/* <h1> {Persion} </h1> */}
+//       <button onClick={ChangState}>Click Me</button>
+//     </>
+//   );
+// }
 
-export default UScomponent;
+// export default UScomponent;
+
+
+
+
+
+
+
+
+
+
+// import React, { useState } from "react";
+
+// function UScomponent() {
+//   const shani = {
+//     name: "shani",
+//     class: "B.Tech",
+//     Roll: 101,
+//     City: "Delhi",
+//   };
+
+//   const [persion , setName] = useState(shani);
+
+//   let ChangState = () => {
+//     setName(previousState => {
+//       return {
+//         ...previousState,
+//         City : "Mumbai"
+//       }
+     
+      
+      
+//     })
+//   }
+
+//   return (
+//     <>
+//     <h1> {persion.City}</h1>
+//     <h1> {persion.Roll}</h1>
+//     <h1> {persion.class}</h1>
+//       <div>UScomponent</div>
+//       {/* <h1> {Persion} </h1> */}
+//       <button onClick={ChangState}>Click Me</button>
+//     </>
+//   );
+// }
+
+// export default UScomponent;
