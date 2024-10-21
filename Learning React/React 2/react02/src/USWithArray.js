@@ -9,6 +9,9 @@ function USWithArray() {
                 return[
                     ...previousState,
                     Math.floor(Math.random() *20),
+
+
+                    
                     90
 
                 ]
