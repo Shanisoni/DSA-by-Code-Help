@@ -5,7 +5,9 @@ export default class ClassComponent extends Component {
     super(props)
   
     this.state = {
+
        counter : 0
+       
     }
   }
 
