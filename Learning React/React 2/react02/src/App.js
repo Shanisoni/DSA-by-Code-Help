@@ -1,8 +1,9 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 // import UScomponent from './UScomponent';
 import USWithArray from './USWithArray';
 import ClassComponent from './ClassComponent';
+import FunctionState from './FunctionState';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <>
       {/* <UScomponent/> */}
       <ClassComponent/>
+      <FunctionState/>
       <USWithArray/>
       
       </>
