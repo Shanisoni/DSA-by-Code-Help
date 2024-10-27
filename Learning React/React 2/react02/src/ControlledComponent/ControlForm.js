@@ -14,7 +14,7 @@ export default class ControlForm extends Component {
     handleForm = (event) => {
 
         this.setState({
-            data: event.target.value
+            data: event.target.value.toLowerCase().substring(0 , 10)
         })
     }
     
