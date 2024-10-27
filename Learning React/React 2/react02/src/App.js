@@ -4,6 +4,7 @@ import './App.css';
 import USWithArray from './USWithArray';
 import ClassComponent from './ClassComponent';
 import FunctionState from './FunctionState';
+import ControlForm from './ControlledComponent/ControlForm';
 
 function App() {
   return (
@@ -11,9 +12,10 @@ function App() {
       <header className="App-header">
       <>
       {/* <UScomponent/> */}
-      <ClassComponent/>
-      <FunctionState/>
-      <USWithArray/>
+      {/* <ClassComponent/> */}
+      <ControlForm/>
+      {/* <FunctionState/> */}
+      {/* <USWithArray/> */}
       
       </>
       </header>
