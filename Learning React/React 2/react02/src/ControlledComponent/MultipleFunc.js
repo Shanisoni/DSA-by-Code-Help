@@ -12,7 +12,16 @@ function MultipleFunc() {
     })
 
    const handleChange = (event) => {
-    
+
+    setState( (prev) => {
+        return {
+            ...prev,
+            [event.target.name] : event.target.value
+
+        }
+
+    })
+
 
     }
   return (
@@ -20,13 +29,15 @@ function MultipleFunc() {
 
         <form>
 
-            <label  htmlFor=''> Enter Your Name</label>
+            <label  htmlFor=''> Enter Your Name : </label>
             <input type='text' name='name' placeholder='Enter Your Name' value={data.name} onChange={handleChange} />
             <br/>
             <br/>
 
-            <label htmlFor='' > Enter Your Email</label>
+            <label htmlFor='' > Enter Your Email : </label>
             <input type='email' name='email' placeholder='Enter Your Email' value={data.email} onChange={handleChange} />
+
+            <br/>
 
             <input type='submit' value={'Submit'} />
 
