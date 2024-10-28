@@ -6,6 +6,7 @@ import ClassComponent from './ClassComponent';
 import FunctionState from './FunctionState';
 import ControlForm from './ControlledComponent/ControlForm';
 import ControlFormFunct from './ControlledComponent/ControlFormFunct';
+import MultipleInput from './ControlledComponent/MultipleInput';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       {/* <UScomponent/> */}
       {/* <ClassComponent/> */}
       {/* <ControlForm/> */}
-      <ControlFormFunct/>
+      {/* <ControlFormFunct/> */}
+      <MultipleInput/>
       {/* <FunctionState/> */}
       {/* <USWithArray/> */}
       

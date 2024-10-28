@@ -5,6 +5,7 @@ function ControlFormFunct() {
     const handler = (event) => {
         event.preventDefault()
         console.log('Form Submitted')
+        console.log(event.target[0].value) 
         // event.target.reset()
 
         // setState({
@@ -13,20 +14,20 @@ function ControlFormFunct() {
 
         // })
     }
-    const [data , setstate] =  useState('Shani')
+    const [data , setName] =  useState('Shani')
     
     
     return (
     <>
 
-    <form>
+    <form onSubmit={handler}>
 
         <label htmlFor='' > Enter Name </label>
-        <input type='text' value= {data} />
+        <input type='text' value= {data}  onChange = { (event) => setName( event.target.value.toUpperCase()) } />
 
         <br/>
 
-        <input type='submit' value={'Submitted'} onChange={handler} />
+        <input type='submit' value={'Submite'}  /> 
 
     </form>
     
