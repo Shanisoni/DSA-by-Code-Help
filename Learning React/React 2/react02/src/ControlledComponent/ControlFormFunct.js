@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function ControlFormFunct() {
 
@@ -13,13 +13,16 @@ function ControlFormFunct() {
 
         // })
     }
-  return (
+    const [data , setstate] =  useState('Shani')
+    
+    
+    return (
     <>
 
     <form>
 
         <label htmlFor='' > Enter Name </label>
-        <input type='text' value= ' Enter Your Data' />
+        <input type='text' value= {data} />
 
         <br/>
 
