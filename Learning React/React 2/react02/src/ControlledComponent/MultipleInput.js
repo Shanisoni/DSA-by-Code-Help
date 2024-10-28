@@ -10,15 +10,22 @@ export default class MultipleInput extends Component {
             email : 'shanisoni7084@gmail.com'
       }
     }
-    handleName = (event) => {
-        this.setState({
-            name : event.target.value
-        })
-    }
+    // handleName = (event) => {
+    //     this.setState({
+    //         name : event.target.value
+    //     })
+    // }
 
-    handleEmail = (event) => {
+    // handleEmail = (event) => {
+    //     this.setState({
+    //         email : event.target.value
+    //     })
+    // }
+
+    handle = ( event) => {
         this.setState({
-            email : event.target.value
+            [event.target.name] : event.target.value 
+
         })
     }
     
@@ -27,13 +34,13 @@ export default class MultipleInput extends Component {
       <div>
 
         <label htmlFor = '' > Enter Your Name  </label>
-        <input type='text' value={this.state.name} placeholder='Enter Your Name'  onChange={this.handleName}/>
+        <input type='text' name='name' value={this.state.name} placeholder='Enter Your Name'  onChange={this.handle}/>
 
         <br/>
         <br/>
  
         <label htmlFor='' > Enter Your Email    </label>
-        <input type='Email '  value={this.state.email} placeholder='Enter Your Email '  onChange={this.handleEmail}/> 
+        <input type='Email ' name='email' value={this.state.email} placeholder='Enter Your Email '  onChange={this.handle}/> 
         
       </div>
     )
