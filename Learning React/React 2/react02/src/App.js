@@ -9,6 +9,7 @@ import ControlFormFunct from './ControlledComponent/ControlFormFunct';
 import MultipleInput from './ControlledComponent/MultipleInput';
 import MultipleFunc from './ControlledComponent/MultipleFunc';
 import CheckBox from './CheckBoxesInReact/CheckBox';
+import ReactRef from './ReactRefrence Component/ReactRef';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
       {/* <ControlFormFunct/> */}
       {/* <MultipleInput/> */}
       {/* <MultipleFunc/> */}
-      <CheckBox/>
+      {/* <CheckBox/> */}
+      <ReactRef/>
       {/* <FunctionState/> */}
       {/* <USWithArray/> */}
       
