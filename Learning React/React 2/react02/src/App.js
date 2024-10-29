@@ -10,6 +10,7 @@ import MultipleInput from './ControlledComponent/MultipleInput';
 import MultipleFunc from './ControlledComponent/MultipleFunc';
 import CheckBox from './CheckBoxesInReact/CheckBox';
 import ReactRef from './ReactRefrence Component/ReactRef';
+import UncontrolledComponent from './UncontrolledComponent';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       {/* <MultipleFunc/> */}
       {/* <CheckBox/> */}
       <ReactRef/>
+      <UncontrolledComponent/>
       {/* <FunctionState/> */}
       {/* <USWithArray/> */}
       
