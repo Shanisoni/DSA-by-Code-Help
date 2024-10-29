@@ -15,21 +15,29 @@ export default class UncontrolledComponent extends Component {
     componentDidMount() {
         console.log(this.nameRef);
         console.log(this.ageRef);   
+        // this.nameRef.current.focus();
+
+    }
+
+    handleChange = (event) => {
+        event.preventDefault();
+        console.log('Nmae = ',  this.nameRef.current.value);
+        console.log('Age = ', this.ageRef.current.value)
     }
     
   render() {
     return (
       <div>
 
-        <form>
+        <form onSubmit={this.handleChange}>
             <label htmlFor='' > Enter Your Name : </label> 
-            <input type='text' placeholder='Name' ref={this.nameRef}/>
+            <input type='text' placeholder='Name' value={ 'Name' }ref={this.nameRef}/>
 
             <br/>
             <br/>
             
             <label htmlFor='' > Enter Your Age : </label> 
-            <input type='number' placeholder='Age' ref={this.ageRef}/>
+            <input type='number' placeholder='Age' value={'AGE'} ref={this.ageRef}/>
 
             <br/>
             
