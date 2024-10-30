@@ -1,21 +1,21 @@
 import React from 'react'
-import { Link }  from 'react-router-dom';
+import { NavLink }  from 'react-router-dom';
 // import './.css';
 
 function NavBar() {
   return (
     <div>
         <nav>
-            <Link to= '/'  > Home </Link>
+            <NavLink to= '/'  > Home </NavLink>
             <br/>
             <br/>
 
-            <Link to= '/About'> About </Link>
+            <NavLink to= '/About'> About </NavLink>
 
             <br/>
             <br/>
 
-            <Link to= '/Contact'> Contact </Link>
+            <NavLink to= '/Contact'> Contact </NavLink>
             <br/>
             <br/>
         </nav>
