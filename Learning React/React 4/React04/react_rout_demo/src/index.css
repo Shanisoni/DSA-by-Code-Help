@@ -25,13 +25,15 @@ nav a {
   margin: 0 1rem;
   padding: 0.5rem 1rem;
   display: inline-block;
-  transition: color 0.3s ease, background-color 0.3s ease;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
 nav a:hover {
-  color: #333;
-  background-color: #fff;
-  border-radius: 5px;
+  color: #040706;
+  background-color: #38e0e6;
+  border-color: #fff; /* Border color on hover */
 }
 
 nav br {
