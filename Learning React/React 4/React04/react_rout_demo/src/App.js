@@ -5,6 +5,7 @@ import {Routes , Route }  from 'react-router-dom';
 import Home from './Component/Home';
 import About from './Component/About';
 import Contact from './Component/Contact';
+import NavBar from './Component/NavBar';
 
 
 
@@ -12,11 +13,12 @@ import Contact from './Component/Contact';
 function App() {
   return (
     <div>
+      <NavBar/>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/Contact' element={<Contact/>} />
-        
+
 
 
       </Routes>
