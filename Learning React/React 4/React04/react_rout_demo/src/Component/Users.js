@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 
-function UserDetails() {
+function Users() {
   return (
 
         <div>
@@ -26,4 +26,4 @@ function UserDetails() {
   )
 }
 
-export default UserDetails
+export default Users

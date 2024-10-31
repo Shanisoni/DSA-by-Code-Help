@@ -12,8 +12,9 @@ import Shirts from './Component/Shirts';
 import Woolen from './Component/Woolen';
 import Shocks from './Component/Shocks';
 import Jeans from './Component/Jeans';
-import UserDetails from './Component/UserDetails';
+import UserDetails from './Component/Users';
 import UserPage from './Component/UserPage';
+import Users from './Component/Users';
 
 
 
@@ -58,21 +59,27 @@ function App() {
           <Route path='Woolen' element={<Woolen/>}> Woolen </Route>
           <Route path='Shocks' element={<Shocks/>}> Shocks </Route>
           <Route path='Jeans' element={<Jeans/>}> Jeans </Route>
-         
+        </Route>
+
+        <Route path='/Users' element={<Users/>}>
+           <Route path='user/id' element={<UserPage/>}/>
+           {/* <Route path='user/2' element={<UserPage/>}/>
+           <Route path='user/3' element={<UserPage/>}/>
+           <Route path='user/4' element={<UserPage/>}/> */}
         </Route>
 
         
-        <Route path='user/2' element={<UserPage/>}/>
+        {/* <Route path='user/2' element={<UserPage/>}/>
         <Route path='user/3' element={<UserPage/>}/>
-        <Route path='user/4' element={<UserPage/>}/>
+        <Route path='user/4' element={<UserPage/>}/> */}
 
 
-        <Route path='/UserDetails' element={<UserDetails/>}> 
+        {/* <Route path='/UserDetails' element={<UserDetails/>}> 
 
         <Route path='user/1' element={<UserPage/>}/>
 
        
-        </Route>
+        </Route> */}
 
         
 
