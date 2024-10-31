@@ -66,10 +66,15 @@ function App() {
 
         <Route path='/Users' element={<Users/>}>
 
-        <Route path='users/1' element={<UserPage/>}/>
+        <Route path='user/1' element={<UserPage/>}/>
 
         </Route>
-        <Route path='users/1' element={<UserPage/>}/>
+
+        <Route path='user/1' element={<UserPage/>}/>
+
+        <Route path='user/2' element={<UserPage/>}/>
+
+        <Route path='user/3' element={<UserPage/>}/>
 
 
 

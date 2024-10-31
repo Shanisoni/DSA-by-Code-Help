@@ -24,7 +24,7 @@ function NavBar() {
             <br/>
             <br/>
 
-            <NavLink to= '/UserDetails'> UserDetails </NavLink>
+            <NavLink to= '/Users'> Users </NavLink>
 
         </nav>
         
