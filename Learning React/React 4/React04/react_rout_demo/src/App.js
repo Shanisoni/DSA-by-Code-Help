@@ -15,6 +15,7 @@ import Jeans from './Component/Jeans';
 import UserDetails from './Component/Users';
 import UserPage from './Component/UserPage';
 import Users from './Component/Users';
+import Admin from './Component/Admin';
 
 
 
@@ -66,15 +67,17 @@ function App() {
 
         <Route path='/Users' element={<Users/>}>
 
-        <Route path='user/1' element={<UserPage/>}/>
+        <Route path=':id' element={<UserPage/>}></Route>
+       
 
         </Route>
+        <Route path=':Admin' element={<Admin/>}></Route>
 
-        <Route path='user/1' element={<UserPage/>}/>
+        <Route path='user/:id' element={<UserPage/>}/> 
 
-        <Route path='user/2' element={<UserPage/>}/>
+        {/* <Route path='user/2' element={<UserPage/>}/>
 
-        <Route path='user/3' element={<UserPage/>}/>
+        <Route path='user/3' element={<UserPage/>}/> */}
 
 
 
