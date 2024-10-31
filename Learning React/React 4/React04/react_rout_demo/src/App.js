@@ -8,6 +8,12 @@ import Contact from './Component/Contact';
 import NavBar from './Component/NavBar';
 import PageNotFound from './Component/PageNotFound';
 import Products from './Component/Products';
+import Shirts from './Component/Shirts';
+import Woolen from './Component/Woolen';
+import Shocks from './Component/Shocks';
+import Jeans from './Component/Jeans';
+import UserDetails from './Component/UserDetails';
+
 
 
 
@@ -40,14 +46,20 @@ function App() {
       
       <Routes>
         <Route path='/' element={<Home/>} />
-        <Route path='/about' element={<About/>} />
-        <Route path='/Contact' element={<Contact/>} />
-        <Route path='/Products' element = { <Products/>} >
-        <Route path='Shirts' >
-          ShirtS
 
+        <Route path='/about' element={<About/>} />
+
+        <Route path='/Contact' element={<Contact/>} />
+
+        <Route path='/Products' element = { <Products/>}>
+          <Route index element = { < Jeans/>} />
+          <Route path='Shirts' element={<Shirts/>}> Shirts </Route>
+          <Route path='Woolen' element={<Woolen/>}> Woolen </Route>
+          <Route path='Shocks' element={<Shocks/>}> Shocks </Route>
+          <Route path='Jeans' element={<Jeans/>}> Jeans </Route>
+          <Route path='UserDetails' element={<UserDetails/>}> UserDetails </Route>
         </Route>
-        </Route>
+
         <Route path='*' element= {< PageNotFound/>} />
 
 

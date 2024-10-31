@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 function Products() {
   return (
@@ -10,10 +10,16 @@ function Products() {
         </h1>
         <nav>
             <Link to={'Shirts'} > Shirt &nbsp; </Link>
+          
+
             <Link to={'Jeans'} > Jeans &nbsp;</Link>
+   
+
             <Link to={'Woolen'} > Woolen &nbsp;</Link>
+      
             <Link to={'Shocks'} > Shocks &nbsp;</Link>
         </nav>
+        <Outlet/>
 
 
 
