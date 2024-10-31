@@ -5,7 +5,7 @@ import { NavLink }  from 'react-router-dom';
 function NavBar() {
   return (
     <div>
-        <nav>
+        <nav className='main-nav'>
             <NavLink to= '/'  > Home </NavLink>
             <br/>
             <br/>
@@ -18,11 +18,13 @@ function NavBar() {
             <NavLink to= '/Contact'> Contact </NavLink>
             <br/>
             <br/>
+
+            <NavLink to= '/Products'> Products </NavLink>
         </nav>
         
 
     </div>
   )
 }
-
+   
 export default NavBar

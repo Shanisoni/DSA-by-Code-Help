@@ -6,6 +6,8 @@ import Home from './Component/Home';
 import About from './Component/About';
 import Contact from './Component/Contact';
 import NavBar from './Component/NavBar';
+import PageNotFound from './Component/PageNotFound';
+import Products from './Component/Products';
 
 
 
@@ -35,10 +37,13 @@ function App() {
   return (
     <div>
       <NavBar/>
+      
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/Contact' element={<Contact/>} />
+        <Route path='/Products' element = { <Products/>} />
+        <Route path='*' element= {< PageNotFound/>} />
 
 
 
@@ -49,9 +54,9 @@ function App() {
       <button onClick={ () => navigate('/Contact')} > Contact</button> */}
 
 
-      <button onClick={ () => navigateabout('/about')} > About</button>
+      {/* <button onClick={ () => navigateabout('/about')} > About</button>
       <button onClick={ () => navigateabout('/Home')} > Home</button>
-      <button onClick={ () => navigateabout('/Contact')} > Contact</button>
+      <button onClick={ () => navigateabout('/Contact')} > Contact</button> */}
 
 
      
