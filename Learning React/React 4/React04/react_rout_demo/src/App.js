@@ -42,7 +42,12 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/Contact' element={<Contact/>} />
-        <Route path='/Products' element = { <Products/>} />
+        <Route path='/Products' element = { <Products/>} >
+        <Route path='Shirts' >
+          ShirtS
+
+        </Route>
+        </Route>
         <Route path='*' element= {< PageNotFound/>} />
 
 
