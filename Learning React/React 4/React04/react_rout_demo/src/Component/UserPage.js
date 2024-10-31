@@ -6,7 +6,7 @@ export default function UserPage() {
     <div>
 
         <h1> Here We Go </h1>
-        <Outlet/>
+ 
       
     </div>
   )
