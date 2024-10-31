@@ -9,10 +9,10 @@ function Products() {
             Welcome To Products Page
         </h1>
         <nav>
-            <Link to={'Shirts'} > Shirt </Link>
-            <Link to={'Shirts'} > Jeans </Link>
-            <Link to={'Shirts'} > Woolen </Link>
-            <Link to={'Shirts'} > Shocks </Link>
+            <Link to={'Shirts'} > Shirt &nbsp; </Link>
+            <Link to={'Shirts'} > Jeans &nbsp;</Link>
+            <Link to={'Shirts'} > Woolen &nbsp;</Link>
+            <Link to={'Shirts'} > Shocks &nbsp;</Link>
         </nav>
 
 
