@@ -57,8 +57,9 @@ function App() {
           <Route path='Woolen' element={<Woolen/>}> Woolen </Route>
           <Route path='Shocks' element={<Shocks/>}> Shocks </Route>
           <Route path='Jeans' element={<Jeans/>}> Jeans </Route>
-          <Route path='UserDetails' element={<UserDetails/>}> UserDetails </Route>
+         
         </Route>
+        <Route path='/UserDetails' element={<UserDetails/>}> UserDetails </Route>
 
         <Route path='*' element= {< PageNotFound/>} />
 
