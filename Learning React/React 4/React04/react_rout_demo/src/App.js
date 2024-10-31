@@ -13,6 +13,7 @@ import Woolen from './Component/Woolen';
 import Shocks from './Component/Shocks';
 import Jeans from './Component/Jeans';
 import UserDetails from './Component/UserDetails';
+import UserPage from './Component/UserPage';
 
 
 
@@ -59,7 +60,21 @@ function App() {
           <Route path='Jeans' element={<Jeans/>}> Jeans </Route>
          
         </Route>
-        <Route path='/UserDetails' element={<UserDetails/>}> UserDetails </Route>
+
+        
+        <Route path='user/2' element={<UserPage/>}/>
+        <Route path='user/3' element={<UserPage/>}/>
+        <Route path='user/4' element={<UserPage/>}/>
+
+
+        <Route path='/UserDetails' element={<UserDetails/>}> 
+
+        <Route path='user/1' element={<UserPage/>}/>
+
+       
+        </Route>
+
+        
 
         <Route path='*' element= {< PageNotFound/>} />
 

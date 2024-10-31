@@ -1,10 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 function UserDetails() {
   return (
 
-         <div>
+        <div>
+
+        <nav>
         
         <h1> Welcome To UserDetails Page </h1>
 
@@ -15,6 +17,10 @@ function UserDetails() {
         <h1>  <Link to='/user/3' > User 3</Link> </h1>
 
         <h1>  <Link to='/user/4' > User 4</Link> </h1>
+        
+        </nav>
+        <Outlet/>
+        
         
          </div>
   )

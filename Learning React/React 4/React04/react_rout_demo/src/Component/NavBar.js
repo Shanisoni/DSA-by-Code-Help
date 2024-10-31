@@ -20,6 +20,12 @@ function NavBar() {
             <br/>
 
             <NavLink to= '/Products'> Products </NavLink>
+
+            <br/>
+            <br/>
+
+            <NavLink to= '/UserDetails'> UserDetails </NavLink>
+
         </nav>
         
 
