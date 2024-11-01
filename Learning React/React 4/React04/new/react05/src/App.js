@@ -1,7 +1,8 @@
 // import logo from './logo.svg';
 import './App.css';
 import React  from 'react';
-import Validation from './Validation';
+// import Validation from './Validation';
+import Form from './Form';
 
 // const Comp1 = lazy(() => import('./Comp1'));
 // const Comp2 = lazy(() => import('./Comp2'));
@@ -9,7 +10,8 @@ import Validation from './Validation';
 function App() {
   return (
     <>
-    <Validation/>
+     <Form/>
+    {/* <Validation/> */}
       {/* <Comp1 />
       <Suspense fallback={<div>Loading....</div>}>
         
