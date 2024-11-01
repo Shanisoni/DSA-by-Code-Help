@@ -4,11 +4,11 @@ function Validation() {
 
     const  [name , setName ] = useState ( '');
     const [email , setEmail]  = useState('');
-    const [nameError , setNameError] = useState(' False ') ;
+    const [nameError , setNameError] = useState( false  ) ;
 
     const handleName=  (e) => {
       let name = e.target.value;
-      if( name.length > 3){
+      if( name.length < 3){
         setNameError('True');
       }
          
@@ -21,14 +21,14 @@ function Validation() {
  
         <form>
         <label htmlFor='Name'>  Name </label>
-        <input type='text'  name='Name' value={name} required  onChange={handleName} />
+        <input type='text'  name='name' value={name} required  onChange={handleName} />
 
         <br/>
         {nameError  ? <span> Name is valid </span> : <span> Name is invalid </span> }
         <br/>
 
         <label htmlFor='Email'>  Email </label>
-        <input type='text'  name='Email'  value={email} required/>
+        <input type='text'  name='email'  value={email} required/>
 
         <br/>
         <br/>
