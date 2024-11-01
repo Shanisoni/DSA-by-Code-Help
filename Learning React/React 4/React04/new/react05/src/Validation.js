@@ -18,7 +18,7 @@ function Validation() {
         <br/>
 
         <label htmlFor='Email'>  Email </label>
-        <input type='text'  name='Email'  value={email} />
+        <input type='text'  name='Email'  value={email} required/>
 
         <br/>
         <br/>
