@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Validation() {
-  return (
+
+    const  [name , setName ] = useState ( '');
+    const [email , setEmail]  = useState('');
+   return (
     <div>
 
 
@@ -9,13 +12,13 @@ function Validation() {
 
         <form>
         <label htmlFor='Name'>  Name </label>
-        <input type='text'  name='Name' />
+        <input type='text'  name='Name' value={name} required />
 
         <br/>
         <br/>
 
         <label htmlFor='Email'>  Email </label>
-        <input type='text'  name='Email' />
+        <input type='text'  name='Email'  value={email} />
 
         <br/>
         <br/>
