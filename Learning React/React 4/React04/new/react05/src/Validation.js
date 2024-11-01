@@ -8,8 +8,14 @@ function Validation() {
 
     const handleName=  (e) => {
       let name = e.target.value;
-      if( name.length < 3){
-        setNameError('True');
+      setName(name);
+      if( name.length < 3)
+        {
+        setNameError( true );
+      }
+      else{
+        setNameError( false) ;
+
       }
          
     }
@@ -24,7 +30,7 @@ function Validation() {
         <input type='text'  name='name' value={name} required  onChange={handleName} />
 
         <br/>
-        {nameError  ? <span> Name is valid </span> : <span> Name is invalid </span> }
+        {nameError  ? <span> Name must be of  </span> : <span> Name is invalid </span> }
         <br/>
 
         <label htmlFor='Email'>  Email </label>
