@@ -22,7 +22,7 @@ function Form() {
             <br/>
 
             <label htmlFor='' > Submit </label>
-            <input type='sumit' name='name' />
+            <input type='sumit' name='name' value= 'Submit' />
 
         </form>
         
