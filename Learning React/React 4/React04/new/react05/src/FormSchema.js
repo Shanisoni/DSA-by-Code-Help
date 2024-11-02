@@ -6,7 +6,7 @@ export const FormSchema = Yup.object({
 
     email : Yup.string().email().required('Email is Required') ,
     Age : Yup.number().required('Age is Required').positive().integer().min(4).max(10),
-    password : Yup.string().required(' Password is Required ').matches(/(?=.*[0-9]) (?=.*[a-z]) (?=.*[A-Z]) (?=.*[@#$%^&*]) /,'Password must contain atleast one uppercase, one lowercase, one number and one special character' )
+    password : Yup.string().required(' Password is Required ').matches(/(?=.*[0-9]) (?=.*[a-z]) (?=.*[A-Z]) (?=.*[@#$%^&*]) /,"Password must contain atleast one uppercase, one lowercase, one number and one special character"),
+    cpass : Yup.string().oneOf([Yup.ref('password'),null],'Password must match') 
 
-    
-});
+}); 
