@@ -7,7 +7,7 @@ function Form() {
     const formInitialValues = {
         name : '',
         email : '',
-        Age : ''
+        Age : '',
     }
 
 //   const formik = useFormik({
@@ -57,12 +57,24 @@ const {handleChange , handleSubmit , values , errors , handleBlur , touched } = 
 
             <br/>  
 
+
             <label htmlFor='' > Enter Your Email </label>
             <input type='text' name='email' value={values.email} onChange={handleChange} onBlur={handleBlur} />
 
             <br/>
             {/* <span style={{color: 'red'}}>  {errors.email} </span> */}
             {errors.email && touched.email ? (<span style={{color: 'red'}}>  {errors.email} </span> ) : null}
+            <br/>
+
+
+            <br/>  
+
+            <label htmlFor='' > Enter Your Age </label>
+            <input type='text' name='Age' value={values.Age} onChange={handleChange} onBlur={handleBlur} />
+
+            <br/>
+            {/* <span style={{color: 'red'}}>  {errors.email} </span> */}
+            {errors.Age && touched.Age ? (<span style={{color: 'red'}}>  {errors.Age} </span> ) : null}
             <br/>
 
             {/* <label htmlFor='' > Submit </label> */}
