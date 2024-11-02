@@ -2,7 +2,8 @@
 import './App.css';
 import React  from 'react';
 // import Validation from './Validation';
-import Form from './Form';
+// import Form from './Form';
+import FormikForm2 from './FormikForm2';
 
 // const Comp1 = lazy(() => import('./Comp1'));
 // const Comp2 = lazy(() => import('./Comp2'));
@@ -10,7 +11,12 @@ import Form from './Form';
 function App() {
   return (
     <>
-     <Form/>
+    <FormikForm2/>
+
+
+
+     {/* <Form/> */}
+    
     {/* <Validation/> */}
       {/* <Comp1 />
       <Suspense fallback={<div>Loading....</div>}>
