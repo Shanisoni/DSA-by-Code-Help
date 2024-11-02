@@ -12,7 +12,7 @@ function Form() {
      initialValues : formInitialValues,
 
      onSubmit : (values) => {
-            alert(JSON.stringify(values));  
+            alert(JSON.stringify('Form Data : ' + values.email + ' ' + values.name));  
             console.log(values);
             console.log(values.name);
             console.log(values.email);
