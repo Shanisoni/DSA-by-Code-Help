@@ -9,7 +9,14 @@ function Form() {
     }
 
   const formik = useFormik({
-     initialValues : formInitialValues
+     initialValues : formInitialValues,
+
+     onSubmit : (values) => {
+            alert(JSON.stringify(values));  
+            console.log(values);
+            console.log(values.name);
+            console.log(values.email);
+     }
 
   });
 
@@ -22,14 +29,14 @@ function Form() {
         </h1>
 
 
-        <form style={{position : 'center'}}>
+        <form style={{position : 'center'}}  onSubmit={formik.handleSubmit}>
             <label htmlFor='' > Enter Your Name </label>
             <input type='text' name='name' value={formik.values.name} onChange={formik.handleChange} />
             <br/>
             <br/>
 
             <label htmlFor='' > Enter Your Email </label>
-            <input type='email' name='name' value={formik.values.email} onChange={formik.handleChange} />
+            <input type='text' name='email' value={formik.values.email} onChange={formik.handleChange} />
 
             <br/>
             <br/>
