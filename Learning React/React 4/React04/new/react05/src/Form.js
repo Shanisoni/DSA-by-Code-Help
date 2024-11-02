@@ -8,6 +8,7 @@ function Form() {
         name : '',
         email : '',
         Age : '',
+        pass : '',
     }
 
 //   const formik = useFormik({
@@ -58,7 +59,7 @@ const {handleChange , handleSubmit , values , errors , handleBlur , touched } = 
             <br/>  
 
 
-            <label htmlFor='' > Enter Your Email </label>
+            <label htmlFor='' > Enter Your Email :</label>
             <input type='text' name='email' value={values.email} onChange={handleChange} onBlur={handleBlur} />
 
             <br/>
@@ -69,12 +70,24 @@ const {handleChange , handleSubmit , values , errors , handleBlur , touched } = 
 
             <br/>  
 
-            <label htmlFor='' > Enter Your Age </label>
+            <label htmlFor='' > Enter Your Age : </label>
             <input type='text' name='Age' value={values.Age} onChange={handleChange} onBlur={handleBlur} />
 
             <br/>
             {/* <span style={{color: 'red'}}>  {errors.email} </span> */}
             {errors.Age && touched.Age ? (<span style={{color: 'red'}}>  {errors.Age} </span> ) : null}
+            <br/>
+
+
+
+            <br/>  
+
+            <label htmlFor='' > Enter Your Password :  </label>
+            <input type='text' name='password' value={values.password} onChange={handleChange} onBlur={handleBlur} />
+
+            <br/>
+            {/* <span style={{color: 'red'}}>  {errors.email} </span> */}
+            {errors.password && touched.password ? (<span style={{color: 'red'}}>  {errors.password} </span> ) : null}
             <br/>
 
             {/* <label htmlFor='' > Submit </label> */}
