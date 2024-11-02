@@ -1,24 +1,41 @@
 import React from 'react'
 import { useFormik } from 'formik';
+import { FormSchema } from './FormSchema';
 
 function Form() {
 
     const formInitialValues = {
         name : '',
-        email : ''
+        email : '',
+        Age : ''
     }
 
-  const formik = useFormik({
-     initialValues : formInitialValues,
+//   const formik = useFormik({
+//      initialValues : formInitialValues,
 
-     onSubmit : (values) => {
-            alert(JSON.stringify('Form Data : ' + values.email + ' ' + values.name));  
-            console.log(values);
-            console.log(values.name);
-            console.log(values.email);
-     }
+//      onSubmit : (values) => {
+//             alert(JSON.stringify('Form Data : ' + values.email + ' ' + values.name));  
+//             console.log(values);
+//             console.log(values.name);
+//             console.log(values.email);
+//      }
 
-  });
+//   });
+
+
+const {handleChange , handleSubmit , values , errors , handleBlur , touched } = useFormik({
+    initialValues : formInitialValues,
+    validationSchema : FormSchema,
+
+    onSubmit : (values) => {
+           alert(JSON.stringify('Form Data : ' + values.email + ' ' + values.name));  
+           console.log(values);
+           console.log(values.name);
+           console.log(values.email);
+           console.log(values.Age);
+    }
+
+ });
 
 
   return (
@@ -29,16 +46,23 @@ function Form() {
         </h1>
 
 
-        <form style={{position : 'center'}}  onSubmit={formik.handleSubmit}>
+        <form style={{position : 'center'}}  onSubmit={handleSubmit}>
+
             <label htmlFor='' > Enter Your Name </label>
-            <input type='text' name='name' value={formik.values.name} onChange={formik.handleChange} />
+            <input type='text' name='name' value={values.name} onChange={handleChange}  onBlur={handleBlur} />
             <br/>
-            <br/>
+
+            {errors.name && touched.name ?  <span style={{color: 'red'}}>  {errors.name} </span> : null}
+            {/* <span style={{color: 'red'}}>  {errors.name} </span> */}
+
+            <br/>  
 
             <label htmlFor='' > Enter Your Email </label>
-            <input type='text' name='email' value={formik.values.email} onChange={formik.handleChange} />
+            <input type='text' name='email' value={values.email} onChange={handleChange} onBlur={handleBlur} />
 
             <br/>
+            {/* <span style={{color: 'red'}}>  {errors.email} </span> */}
+            {errors.email && touched.email ? (<span style={{color: 'red'}}>  {errors.email} </span> ) : null}
             <br/>
 
             {/* <label htmlFor='' > Submit </label> */}
