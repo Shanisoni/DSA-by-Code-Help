@@ -61,6 +61,60 @@ function GridBS() {
             </Col>
         </Row>
 
+        <br/>
+
+
+        <Row >
+            <Col  >
+            <div className='bg-success' p-4 >
+                First Div
+            </div>
+            </Col>
+
+            <Col>
+               <div className='bg-primary' p-4 >
+                Second Div
+               </div>
+            </Col>
+            <Col  >
+            <div className='bg-success' p-4 >
+                First Div
+            </div>
+            </Col>
+
+            <Col>
+               <div className='bg-primary' p-4 >
+                Second Div
+               </div>
+            </Col>
+
+            <Col  >
+            <div className='bg-success' p-4 >
+                First Div
+            </div>
+            </Col>
+
+            <Col>
+               <div className='bg-primary' p-4 >
+                Second Div
+               </div>
+            </Col>
+            <Col  >
+            <div className='bg-success' p-4 >
+                First Div
+            </div>
+            </Col>
+
+            <Col>
+               <div className='bg-primary' p-4 >
+                Second Div
+               </div>
+            </Col>
+        </Row>
+
+
+
+
         </Container>
 
         
