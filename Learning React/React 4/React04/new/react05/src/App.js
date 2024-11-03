@@ -5,6 +5,7 @@ import React  from 'react';
 // import Form from './Form';
 import FormikForm2 from './FormikForm2';
 import ReactBS from './ReactBS';
+import GridBS from './GridBS';
 
 // const Comp1 = lazy(() => import('./Comp1'));
 // const Comp2 = lazy(() => import('./Comp2'));
@@ -13,7 +14,8 @@ function App() {
   return (
     <>
 
-    <ReactBS/>
+    {/* <ReactBS/> */}
+    <GridBS/>
     {/* <FormikForm2/> */}
     
     {/* <FormikForm2/> */}
