@@ -12,7 +12,7 @@ function App() {
   return (
     <>
     <FormikForm2/>
-    <F
+    
     {/* <FormikForm2/> */}
 
 

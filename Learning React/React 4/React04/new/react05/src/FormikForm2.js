@@ -20,7 +20,7 @@ function FormikForm2() {
     <div>
         <h1>Welcome To Formik Form  </h1>
         <Formik initialValues={{name : 'Shani'}} 
-        onSubmit={(values) => {
+        onSubmit={(values) => { 
 
             console.log(values);
             setFormData(values);
