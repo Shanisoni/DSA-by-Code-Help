@@ -5,7 +5,7 @@ import React  from 'react';
 // import Form from './Form';
 // import FormikForm2 from './FormikForm2';
 // import ReactBS from './ReactBS';
-// import GridBS from './GridBS';
+import GridBS from './GridBS';
 import ImagesDemo from './ImagesDemo';
 import Cards from './Cards';
 
@@ -16,7 +16,7 @@ function App() {
   return (
     <>
 
-    <ImagesDemo/>
+    {/* <ImagesDemo/> */}
 
     <Cards/>
 

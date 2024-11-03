@@ -1,39 +1,73 @@
-import React from 'react'
-import { Card, Container , Row , Col } from 'react-bootstrap'
-import lak from './Images/lak.png'
+import React from 'react';
+import { Card, Container, Row, Col, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import lak from './Images/lak.png'; // Ensure the path is correct
 
 function Cards() {
   return (
-    <div>
-        
-        <Container  >
-            <Row>
-                <Col md= {4} >  
-                <Card>
+    <Container>
+      <Row>
 
-                <Card.Img src= {lak}  height={200} width={200}/>
-                <Card.Body>
-                    <Card.Title>
-                        This is Card Title
-                    </Card.Title>
-                    <Card.Subtitle>
-                        This is Card Subtitle
-                    </Card.Subtitle>
-                    <Card.Text>
-                        This is Card Text
-                    </Card.Text>
-                </Card.Body>
+        <Col md={4}>
 
-                </Card>
-               
-                
-                </Col>
-            </Row>
-        </Container>
+          <Card bg='warning'>
+            
+            <Card.Img src={lak} alt="Card image" />
+            <Card.ImgOverlay>
+              <Card.Title>This is Card Title</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">This is Card Subtitle</Card.Subtitle>
+              <Card.Text>
+                This is Card Text
+              </Card.Text>
+              <Card.Link href="#">Card Link</Card.Link>
+              <div className='mt-2'>
+              <Button variant='primary'> Submit </Button>
+
+              </div>
+             
+              </Card.ImgOverlay>
+          </Card>
+        </Col>
+
+        <Col md={4}>
+          <Card  bg='warning'>
+            <Card.Img src={lak} alt="Card image" />
+            <Card.Body>
+              <Card.Title>This is Card Title</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">This is Card Subtitle</Card.Subtitle>
+              <Card.Text>
+                This is Card Text
+              </Card.Text>
+              <Card.Link href="#">Card Link</Card.Link>
+              <Button variant='primary'> Submit </Button>
+            </Card.Body>
+          </Card>
+        </Col>
+
+        <Col md={4}>
+          <Card bg='warning' >
+            <Card.Header >This is Card Header</Card.Header>
+            <Card.Img src={lak} alt="Card image" />
+            <Card.Body>
+              <Card.Title>This is Card Title</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">This is Card Subtitle</Card.Subtitle>
+              <Card.Text>
+                This is Card Text
+              </Card.Text>
+              <Card.Link href="#">Card Link</Card.Link>
+              <Button variant='primary'> Submit </Button>
+            </Card.Body>
+            <Card.Footer>
+                This Card Footer
+            </Card.Footer>
+          </Card>
+        </Col>
+
         
         
-    </div>
-  )
+      </Row>
+    </Container>
+  );
 }
 
-export default Cards
+export default Cards;
