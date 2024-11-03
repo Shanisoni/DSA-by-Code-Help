@@ -1,6 +1,10 @@
 // import logo from './logo.svg';
+// import { Nav } from 'react-bootstrap';
 import './App.css';
 import React  from 'react';
+// import NavBar from './NavBar.JS';
+import MyNavBar from './MyNavBar';
+
 // import Validation from './Validation';
 // import Form from './Form';
 // import FormikForm2 from './FormikForm2';
@@ -8,7 +12,9 @@ import React  from 'react';
 // import GridBS from './GridBS';
 // import ImagesDemo from './ImagesDemo';
 // import Cards from './Cards';
-import NavBar from './NavBar.JS';
+
+// import NavBar from './NavBar';
+
 
 // const Comp1 = lazy(() => import('./Comp1'));
 // const Comp2 = lazy(() => import('./Comp2'));
@@ -17,10 +23,14 @@ function App() {
   return (
     <>
 
+    <MyNavBar/>
+
+    
+
     {/* <ImagesDemo/> */}
 
     {/* <Cards/> */}
-    <NavBar/>
+    {/* <NavBar/> */}
 
     {/* <ReactBS/> */}
     {/* <GridBS/> */}
