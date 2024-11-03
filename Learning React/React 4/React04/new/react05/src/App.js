@@ -5,9 +5,10 @@ import React  from 'react';
 // import Form from './Form';
 // import FormikForm2 from './FormikForm2';
 // import ReactBS from './ReactBS';
-import GridBS from './GridBS';
-import ImagesDemo from './ImagesDemo';
-import Cards from './Cards';
+// import GridBS from './GridBS';
+// import ImagesDemo from './ImagesDemo';
+// import Cards from './Cards';
+import NavBar from './NavBar.JS';
 
 // const Comp1 = lazy(() => import('./Comp1'));
 // const Comp2 = lazy(() => import('./Comp2'));
@@ -18,7 +19,8 @@ function App() {
 
     {/* <ImagesDemo/> */}
 
-    <Cards/>
+    {/* <Cards/> */}
+    <NavBar/>
 
     {/* <ReactBS/> */}
     {/* <GridBS/> */}
