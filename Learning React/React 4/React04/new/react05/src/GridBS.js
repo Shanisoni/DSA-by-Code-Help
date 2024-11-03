@@ -7,10 +7,10 @@ function GridBS() {
     <div>
 
 
-        <Container fluid>
+        <Container fluid = 'md'  >
 
         <Row className='mt-2'>
-            <Col  >
+            <Col md= {{ offset:6 , span : 3 }} >
             <div className='bg-success' p-4 >
                 First Div
             </div>
@@ -52,6 +52,12 @@ function GridBS() {
             <div className='bg-success' p-4 >
                 First Div
             </div>
+            </Col>
+
+            <Col>
+               <div className='bg-primary' p-4 >
+                Second Div
+               </div>
             </Col>
 
             <Col>
