@@ -7,6 +7,7 @@ import React  from 'react';
 // import ReactBS from './ReactBS';
 // import GridBS from './GridBS';
 import ImagesDemo from './ImagesDemo';
+import Cards from './Cards';
 
 // const Comp1 = lazy(() => import('./Comp1'));
 // const Comp2 = lazy(() => import('./Comp2'));
@@ -16,6 +17,8 @@ function App() {
     <>
 
     <ImagesDemo/>
+
+    <Cards/>
 
     {/* <ReactBS/> */}
     {/* <GridBS/> */}
