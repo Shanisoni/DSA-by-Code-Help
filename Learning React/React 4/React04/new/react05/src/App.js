@@ -3,9 +3,10 @@ import './App.css';
 import React  from 'react';
 // import Validation from './Validation';
 // import Form from './Form';
-import FormikForm2 from './FormikForm2';
-import ReactBS from './ReactBS';
-import GridBS from './GridBS';
+// import FormikForm2 from './FormikForm2';
+// import ReactBS from './ReactBS';
+// import GridBS from './GridBS';
+import ImagesDemo from './ImagesDemo';
 
 // const Comp1 = lazy(() => import('./Comp1'));
 // const Comp2 = lazy(() => import('./Comp2'));
@@ -14,8 +15,10 @@ function App() {
   return (
     <>
 
+    <ImagesDemo/>
+
     {/* <ReactBS/> */}
-    <GridBS/>
+    {/* <GridBS/> */}
     {/* <FormikForm2/> */}
     
     {/* <FormikForm2/> */}
