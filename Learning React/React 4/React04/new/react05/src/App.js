@@ -4,6 +4,7 @@ import './App.css';
 import React  from 'react';
 // import NavBar from './NavBar.JS';
 import MyNavBar from './MyNavBar';
+import { Carousel } from 'react-bootstrap';
 
 // import Validation from './Validation';
 // import Form from './Form';
@@ -23,7 +24,9 @@ function App() {
   return (
     <>
 
-    <MyNavBar/>
+    {/* <MyNavBar/> */}
+
+    <Carousel/>
 
     
 
