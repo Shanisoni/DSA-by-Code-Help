@@ -3,8 +3,9 @@
 import './App.css';
 import React  from 'react';
 // import NavBar from './NavBar.JS';
-import MyNavBar from './MyNavBar';
-import { Carousel } from 'react-bootstrap';
+// import MyNavBar from './MyNavBar';
+// import { Carousel } from 'react-bootstrap';
+import MyCarousel from './MyCarousel';
 
 // import Validation from './Validation';
 // import Form from './Form';
@@ -25,7 +26,7 @@ function App() {
     <>
 
     {/* <MyNavBar/> */}
-<Carousel/>
+<MyCarousel/>
 
     
 
