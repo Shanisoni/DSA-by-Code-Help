@@ -11,8 +11,8 @@ function MyCarousel() {
       <Container>
         <Row>
           <Col>
-            <Carousel>
-              <Carousel.Item>
+            <Carousel fade>
+              <Carousel.Item interval={15}>
                 <img className="d-block w-100" src={sunset} alt="Sunset" />
                 <Carousel.Caption>
                   <h3>
@@ -22,58 +22,58 @@ function MyCarousel() {
                     This is the first image 
                   </p>
                 </Carousel.Caption>
-              </Carousel.Item>
+              </Carousel.Item >
 
-              <Carousel.Item>
+              <Carousel.Item  interval={15}>
                 <img className="d-block w-100" src={lake} alt="Lake" />
                 <Carousel.Caption>
                   <h3>
-                    First Image
+                  Second
                   </h3>
                   <p>
-                    This is the first image 
+                    This is the Second image 
                   </p>
                 </Carousel.Caption>
               </Carousel.Item>
 
-              <Carousel.Item>
+              <Carousel.Item  interval={15}>
                 <img className="d-block w-100" src={sunset1} alt="Sunset 1" />
                 <Carousel.Caption>
                   <h3>
-                    First Image
+                    Third Image
                   </h3>
                   <p>
-                    This is the first image 
+                    This is the Third  image 
                   </p>
                 </Carousel.Caption>
               </Carousel.Item>
 
               {/* Optional additional items */}
-              <Carousel.Item>
+              <Carousel.Item  interval={15}>
                 <img className="d-block w-100" src={sunset1} alt="Sunset 1" />
                 <Carousel.Caption>
                   <h3>
-                    First Image
+                    Fourth Image
                   </h3>
                   <p>
-                    This is the first image 
+                    This is the Fourth  image 
                   </p>
                 </Carousel.Caption>
               </Carousel.Item>
 
-              <Carousel.Item>
+              <Carousel.Item  interval={15}>
                 <img className="d-block w-100" src={lake} alt="Lake" />
                 <Carousel.Caption>
                   <h3>
-                    First Image
+                    Fifth Image
                   </h3>
                   <p>
-                    This is the first image 
+                    This is the Fifth image 
                   </p>
                 </Carousel.Caption>
               </Carousel.Item>
 
-              <Carousel.Item>
+              <Carousel.Item  interval={15}>
                 <img className="d-block w-100" src={sunset1} alt="Sunset 1" />
                 <Carousel.Caption>
                   <h3>
