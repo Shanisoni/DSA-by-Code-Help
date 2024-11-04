@@ -14,27 +14,75 @@ function MyCarousel() {
             <Carousel>
               <Carousel.Item>
                 <img className="d-block w-100" src={sunset} alt="Sunset" />
+                <Carousel.Caption>
+                  <h3>
+                    First Image
+                  </h3>
+                  <p>
+                    This is the first image 
+                  </p>
+                </Carousel.Caption>
               </Carousel.Item>
 
               <Carousel.Item>
                 <img className="d-block w-100" src={lake} alt="Lake" />
+                <Carousel.Caption>
+                  <h3>
+                    First Image
+                  </h3>
+                  <p>
+                    This is the first image 
+                  </p>
+                </Carousel.Caption>
               </Carousel.Item>
 
               <Carousel.Item>
                 <img className="d-block w-100" src={sunset1} alt="Sunset 1" />
+                <Carousel.Caption>
+                  <h3>
+                    First Image
+                  </h3>
+                  <p>
+                    This is the first image 
+                  </p>
+                </Carousel.Caption>
               </Carousel.Item>
 
               {/* Optional additional items */}
               <Carousel.Item>
                 <img className="d-block w-100" src={sunset1} alt="Sunset 1" />
+                <Carousel.Caption>
+                  <h3>
+                    First Image
+                  </h3>
+                  <p>
+                    This is the first image 
+                  </p>
+                </Carousel.Caption>
               </Carousel.Item>
 
               <Carousel.Item>
                 <img className="d-block w-100" src={lake} alt="Lake" />
+                <Carousel.Caption>
+                  <h3>
+                    First Image
+                  </h3>
+                  <p>
+                    This is the first image 
+                  </p>
+                </Carousel.Caption>
               </Carousel.Item>
 
               <Carousel.Item>
                 <img className="d-block w-100" src={sunset1} alt="Sunset 1" />
+                <Carousel.Caption>
+                  <h3>
+                    First Image
+                  </h3>
+                  <p>
+                    This is the first image 
+                  </p>
+                </Carousel.Caption>
               </Carousel.Item>
             </Carousel>
           </Col>
