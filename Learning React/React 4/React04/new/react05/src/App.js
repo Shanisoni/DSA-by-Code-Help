@@ -1,12 +1,15 @@
 // import logo from './logo.svg';
 // import { Nav } from 'react-bootstrap';
+import Api from './Api.js';
 import './App.css';
 import React  from 'react';
 // import NavBar from './NavBar.JS';
 // import MyNavBar from './MyNavBar';
 // import { Carousel } from 'react-bootstrap';
-import MyCarousel from './MyCarousel';
-import API from './API.JS';
+// import MyCarousel from './MyCarousel';
+// import Api from './Api';
+// import Api from './Api';
+
 
 // import Validation from './Validation';
 // import Form from './Form';
@@ -26,11 +29,13 @@ function App() {
   return (
     <>
 
+  <Api/>
 
-    <API/>
+
+ 
 
     {/* <MyNavBar/> */}
-<MyCarousel/>
+{/* <MyCarousel/> */}
 
     
 

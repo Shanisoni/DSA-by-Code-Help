@@ -1,10 +1,10 @@
 import React from 'react'
 
-function API() {
+function Api() {
 
     fetch('https://jsonplaceholder.typicode.com/posts')
     .them(  (response) => {
-        return response.json()
+        
         console.log(response);
     })
   return (
@@ -19,4 +19,4 @@ function API() {
   )
 }
 
-export default API
+export default Api
