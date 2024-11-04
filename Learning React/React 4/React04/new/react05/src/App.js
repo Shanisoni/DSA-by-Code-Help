@@ -6,6 +6,7 @@ import React  from 'react';
 // import MyNavBar from './MyNavBar';
 // import { Carousel } from 'react-bootstrap';
 import MyCarousel from './MyCarousel';
+import API from './API.JS';
 
 // import Validation from './Validation';
 // import Form from './Form';
@@ -24,6 +25,9 @@ import MyCarousel from './MyCarousel';
 function App() {
   return (
     <>
+
+
+    <API/>
 
     {/* <MyNavBar/> */}
 <MyCarousel/>
