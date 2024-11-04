@@ -25,8 +25,7 @@ function App() {
     <>
 
     {/* <MyNavBar/> */}
-
-    <Carousel/>
+<Carousel/>
 
     
 
