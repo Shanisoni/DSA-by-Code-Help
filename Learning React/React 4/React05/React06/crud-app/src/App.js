@@ -12,10 +12,11 @@ function App() {
 
       <Routes>
 
-        <Route path='/'  element={ <Read/>} >
-        <Route path='/Create'  element={ <Create/>} ></Route>
+        <Route path='/'  element={ <Read/>}> </Route>
+        
 
-        </Route>
+       
+        <Route path='/Create'  element={ <Create/>} ></Route>
 
       </Routes>
 

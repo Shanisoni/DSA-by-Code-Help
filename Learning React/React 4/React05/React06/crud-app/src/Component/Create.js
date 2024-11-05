@@ -2,12 +2,15 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function Create() {
   const [name, setName] = useState('');
   const [age, setAge] = useState('');
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false); // State to show success message
+
+  const Navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
