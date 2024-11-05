@@ -10,6 +10,8 @@ function Read() {
       console.log(response.data)
     })
   }
+
+  getData();
   return (
     <>
     <div className='row'>
