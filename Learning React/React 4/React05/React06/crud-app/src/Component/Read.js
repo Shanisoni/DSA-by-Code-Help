@@ -38,32 +38,30 @@ function Read() {
           </thead>
           <tbody>
               { 
-                APIdata.map( (data) => {
-                  return (
-                    <tr key={data.id}>
-                      <td>{data.id}</td>
-                      <td>{data.Employee_name}</td>
-                      <td>{data.Employee_Age}</td>
-                      <td>{data.Employee_Email}</td>
-                      <td><button className='btn btn-primary'>Edit</button></td>
-                      <td><button className='btn btn-danger'>Delete</button></td>
-                    </tr>
-                  )
-                })
+                  APIdata.map( (item) => {
+                    return (
+                      <>
+                      <tr>
+                        <td>{item.id} </td>
+                        <td>{item.Employee_name} </td>
+                        <td>{item.Employee_Age} </td>
+                        <td>{item.Employee_Email} </td>
+                        <td>
+                          <button className='btn btn-primary' > Edit </button>
+                        </td>
+                        <td>
+                          <button className='btn btn-primary' > Delete </button>
+                        </td>
+                      </tr>
 
 
-
-
-                // <tr>
-                //         <td>{item.id} </td>
-                //         <td>{item.Employee_name} </td>
-                //         <td>{item.Employee_Age} </td>
-                //         <td>{item.Employee_Email} </td>
-                //         <td>Edit </td>
-                //         <td>Delete</td>
-                //       </tr>
-                 
+                      </>
+                     
+                    )
+                 })
               }
+
+              
           </tbody>
         </table>
       </div>
