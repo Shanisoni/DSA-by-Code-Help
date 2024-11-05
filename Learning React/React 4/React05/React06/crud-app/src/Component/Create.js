@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Create() {
   const [name, setName] = useState('');
@@ -44,6 +45,11 @@ function Create() {
               Data submitted successfully!
             </div>
           )}
+           <div className=' mb-2 mt-2'>
+            <Link to='/'>
+              <button className='btn btn-primary'>View the Database </button>
+            </Link>
+          </div>
           <form onSubmit={handleSubmit}>
             <div className='form-group mt-3'>
               <label>Enter your Name</label>
