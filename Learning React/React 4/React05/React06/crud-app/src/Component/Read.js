@@ -22,6 +22,15 @@ function Read() {
     getData();
   }, []);  // Empty dependency array ensures this runs only once
 
+
+  function handleDelete(id){
+    axios.delete(`https://6729ac1e6d5fa4901b6de2b6.mockapi.io/crud/${id}`)
+    .then( () => {
+      getData();
+    })
+  }
+
+
   return (
     <>
       <div className='row'>
@@ -53,7 +62,7 @@ function Read() {
                     <button className='btn btn-primary'>Edit</button>
                   </td>
                   <td>
-                    <button className='btn btn-danger'>Delete</button>
+                    <button className='btn btn-danger'  onClick={() => handleDelete(item.id)} >Delete</button>
                   </td>
                 </tr>
               ))}
