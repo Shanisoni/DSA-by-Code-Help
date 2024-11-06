@@ -4,6 +4,7 @@ import './App.css';
 import Create from './Component/Create'
 import Read from './Component/Read';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Edit from './Component/Edit';
 
 function App() {
   return (
@@ -13,9 +14,7 @@ function App() {
       <Routes>
 
         <Route path='/'  element={ <Read/>}> </Route>
-        
-
-       
+        <Route path='/Edit'  element={ <Edit/>} ></Route>      
         <Route path='/Create'  element={ <Create/>} ></Route>
 
       </Routes>
