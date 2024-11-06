@@ -36,9 +36,9 @@ function Read() {
 
 
 
-    function setDataStorage( id , Name , Age , Email) {
+    function setDataStorage( id , name , Age , Email) {
       localStorage.setItem('id', id);
-      localStorage.setItem('Name', Name);
+      localStorage.setItem('Name', name);
       localStorage.setItem('Age', Age);
       localStorage.setItem('Email', Email);
 
@@ -70,12 +70,12 @@ function Read() {
               {APIdata.map((item) => (
                 <tr key={item.id}>
                   <td>{item.id}</td>
-                  <td>{item.Employee_Name}</td>
+                  <td>{item.Employee_name}</td>
                   <td>{item.Employee_Age}</td>
                   <td>{item.Employee_Email}</td>
                   <td>
                     <Link to={'/Edit'} >
-                    <button className='btn btn-primary'  onClick={() => setDataStorage(item.id, item.Employee_Name, item.Employee_Age, item.Employee_Email )}>Edit</button>
+                    <button className='btn btn-primary'  onClick={() => setDataStorage(item.id, item.Employee_name, item.Employee_Age, item.Employee_Email )}>Edit</button>
                     </Link>
                     
                   </td>

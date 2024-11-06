@@ -30,7 +30,7 @@ function Create() {
         setTimeout(() => {
           setSubmitted(false); // Hide message after 3 seconds
           navigate('/'); // Redirect to the database view after successful submission
-        }, 3000);
+        }, 1000);
       })
       .catch((error) => {
         console.error('Error submitting data:', error);

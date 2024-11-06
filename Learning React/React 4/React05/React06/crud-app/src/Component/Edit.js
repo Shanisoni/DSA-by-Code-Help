@@ -31,13 +31,13 @@ function Edit() {
         axios
         .put(`https://6729ac1e6d5fa4901b6de2b6.mockapi.io/crud/${id}`, {
 
-            Employee_Name : Name,
+            Employee_name : Name,
             Employee_Age : Age,
             Employee_Email : Email,
             
         })
         .then(() => {
-            navigate('/Read')
+            navigate('/')
         });
 
 
