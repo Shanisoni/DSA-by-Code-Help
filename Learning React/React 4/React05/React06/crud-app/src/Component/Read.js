@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import Edit from './Edit';
 
 function Read() {
   const [APIdata, setAPIdata] = useState([]);
@@ -33,6 +34,18 @@ function Read() {
       });
   }
 
+
+
+    function setDataStorage( id , Name , Age , Email) {
+      localStorage.setItem('id', id);
+      localStorage.setItem('Name', Name);
+      localStorage.setItem('Age', Age);
+      localStorage.setItem('Email', Email);
+
+    }
+
+    
+
   return (
     <>
       <div className='row'>
@@ -57,11 +70,14 @@ function Read() {
               {APIdata.map((item) => (
                 <tr key={item.id}>
                   <td>{item.id}</td>
-                  <td>{item.Employee_name}</td>
+                  <td>{item.Employee_Name}</td>
                   <td>{item.Employee_Age}</td>
                   <td>{item.Employee_Email}</td>
                   <td>
-                    <button className='btn btn-primary'>Edit</button>
+                    <Link to={'/Edit'} >
+                    <button className='btn btn-primary'  onClick={() => setDataStorage(item.id, item.Employee_Name, item.Employee_Age, item.Employee_Email )}>Edit</button>
+                    </Link>
+                    
                   </td>
                   <td>
                     <button
