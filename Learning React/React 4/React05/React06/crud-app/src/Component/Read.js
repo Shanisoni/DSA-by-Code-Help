@@ -22,20 +22,22 @@ function Read() {
     getData();
   }, []);  // Empty dependency array ensures this runs only once
 
-
-  function handleDelete(id){
+  // Function to handle deletion of data
+  function handleDelete(id) {
     axios.delete(`https://6729ac1e6d5fa4901b6de2b6.mockapi.io/crud/${id}`)
-    .then( () => {
-      getData();
-    })
+      .then(() => {
+        getData(); // Fetch the updated data after deletion
+      })
+      .catch((error) => {
+        console.error('Error deleting data:', error);
+      });
   }
-
 
   return (
     <>
       <div className='row'>
         <div className='col-md-12'>
-          <div className=' mb-2 mt-2'>
+          <div className='mb-2 mt-2'>
             <Link to='/Create'>
               <button className='btn btn-primary'>Create a New Database</button>
             </Link>
@@ -62,7 +64,22 @@ function Read() {
                     <button className='btn btn-primary'>Edit</button>
                   </td>
                   <td>
-                    <button className='btn btn-danger'  onClick={() => handleDelete(item.id)} >Delete</button>
+                    <button
+                      className='btn btn-danger'
+                      onClick={() => {
+                        const confirmed = window.confirm(
+                          "Are you sure you want to delete this data?"
+                        );
+                        if (confirmed) {
+                          console.log("Confirmed deletion for ID:", item.id);
+                          handleDelete(item.id);
+                        } else {
+                          console.log("Deletion cancelled");
+                        }
+                      }}
+                    >
+                      Delete
+                    </button>
                   </td>
                 </tr>
               ))}
