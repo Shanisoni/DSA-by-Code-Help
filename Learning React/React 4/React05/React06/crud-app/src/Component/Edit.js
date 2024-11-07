@@ -1,4 +1,5 @@
 // import React from 'react'
+
 import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
@@ -10,6 +11,7 @@ import { Link } from 'react-router-dom';
 
 
 function Edit() {
+
     const navigate = useNavigate(); 
 
 
@@ -19,6 +21,7 @@ function Edit() {
     const [id, setId] = useState(false); 
 
     useEffect( () => {
+
         setId(localStorage.getItem('id'));
         setName(localStorage.getItem('Name'));
         setAge(localStorage.getItem('Age'));
@@ -26,6 +29,7 @@ function Edit() {
 
 
     } , [])
+
     const handleUpdate = (e) => {
         e.preventDefault();
         axios
@@ -36,6 +40,7 @@ function Edit() {
             Employee_Email : Email,
             
         })
+        
         .then(() => {
             navigate('/')
         });
