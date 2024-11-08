@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import { useSelector , useDispatch } from 'react-redux';
-import { increment, decrement, Increase } from './Actions';
+import {  Increase , Decrease } from './Actions';
 
 function App() {
 
@@ -18,7 +18,7 @@ function App() {
       <button type="button"  className = 'btn btn-primary'  onClick={() => dispatch(Increase()) } > Increment </button>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     
-      <button type="button"  className = 'btn btn-danger' > Decrement </button>
+      <button type="button"  className = 'btn btn-danger'  onClick={() => dispatch(Decrease()) } > Decrement </button>
       
     </div>
   );
