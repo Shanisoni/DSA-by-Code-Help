@@ -6,7 +6,7 @@ const Inc_dec = (state = initialState , action )  => {
     switch(action.type) { 
         case 'INCREMENT' :
             return state + 1;
-        case 'DEREMENT' :
+        case 'DECREMENT' :
             return state - 1;
         default : return   state;
     }

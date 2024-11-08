@@ -9,7 +9,7 @@ export const Increase = () => {
 
 export const Decrease  = () => {
     return {
-      type: 'INCREMENT'
+      type: 'DECREMENT'
     }
   }
   
