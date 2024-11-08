@@ -1,10 +1,10 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import { useSelector , useDispatch } from 'react-redux';
+import { useSelector  } from 'react-redux';
 
 function App() {
 
-  const myState = useSelector ( (state) => state.Inc_Dec);
+  const myState = useSelector ( (State) => State.Inc_Dec);
   return (
     <div className="App">
       <h1 mt-4>
